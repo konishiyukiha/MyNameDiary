@@ -1,0 +1,13 @@
+<h1>Article#new</h1>
+<p>Find me inapp/views/new.html.erb</p>
+
+<h1>新規投稿</h1>
+<%= form_tag articles_new_path do %>
+	タイトル
+	<input type="text" name="title">
+	本文
+	<textarea name ="body"></textarea>
+	著者
+	<input type="text" name="author">
+	<input type="submit" value="投稿する">
+	<% end %>
