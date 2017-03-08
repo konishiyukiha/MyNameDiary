@@ -1,0 +1,7 @@
+<h1>投稿一覧</h1>
+<% @articles.each do |article| %>
+<h4>タイトル</h4>
+<span><%= link_to article.title, show_article_path(article.id) %></span>
+
+<%end%>
+<h3><%= link_to '新規投稿する', "/articles/new" %></h3>
